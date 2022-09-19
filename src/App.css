@@ -1,38 +1,70 @@
 .App {
   text-align: center;
+  padding-bottom: 2%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2 {
+  color: lightskyblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button {
+  position: absolute;
+  bottom: 5%;
+  left: 47%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.flex .cardStack img {
+  max-width: 130px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex .cardStack .card:not(:first-child) {
+  max-width: 130px;
+  margin-top: -155px;
+  position: relative;
 }
+
+#rectangleVisible1, #rectangleVisible2, #rectangleVisible3, #rectangleVisible4 {
+  border-radius: 20px;
+  border: 2px solid white;
+  background-color: #001f3f;
+  width: 126px;
+  height: 190px;
+}
+
+#rectangleHidden {
+  border-radius: 20px;
+  border: 2px solid #001f3f;
+  background-color: #001f3f;
+  width: 126px;
+  height: 190px;
+}
+
+.cardStack {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.pile {
+  max-width: 130px;
+  margin-left: 8%;
+  margin-top: 1%;
+}
+
+.pile img {
+  max-width: 130px;
+  visibility: hidden;
+  position: absolute;
+  bottom: 15%;
+}
+
+.cardsLeft {
+  margin-top: 24%;
+  margin-left: 5%;
+  position: relative;
+}
+
